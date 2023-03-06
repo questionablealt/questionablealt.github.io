@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phoenix</title>
+
+    <style>
+      body {
+        font-family: "Lexend", sans-serif;
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        background-color: #110921;
+      }
+      .mbody {
+        background: url("images/background2.jpg") no-repeat;
+        background-size: 100%;
+        background-position: top;
+        width: 100%;
+        height: 800px;
+      }
+      .header {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .header > a {
+        margin-top: 30px;
+        margin-right: 3%;
+        font-size: 40px;
+        text-decoration: underline;
+        color: #f8d2ba;
+        font-weight: light;
+      }
+      .header:hover > #navitem > .nav-items {
+        opacity: 0.3;
+      }
+      .header:hover > #navitem > .nav-items:hover {
+        opacity: 1;
+      }
+      #navitems,
+      .nav-items {
+        transition: opacity 400ms cubic-bezier(0.47, 1.03, 0.56, 0.99);
+      }
+      #nav-toggle {
+        height: 4rem;
+        width: 4rem;
+        position: fixed;
+        z-index: 3;
+        left: 50%;
+        bottom: 2rem;
+        transform: translateX(-50%);
+        background-color: rgb(182, 142, 113);
+        border: none;
+        border-radius: 5rem;
+        outline: none;
+        box-shadow: 0rem 0rem 4rem rgba(0 0 0 / 35%);
+        transition-duration: 150ms;
+        transition-timing-function: ease-in;
+        animation: 1s ease-out 0s 1 slideIn;
+        background-image: url(/images/logo.jpg);
+        background-size: 100%;
+      }
+      #nav-toggle:hover {
+        transform: translateX(-50%) scale(1.04);
+        transition-duration: 200ms;
+        transition-timing-function: linear;
+      }
+
+      #nav-toggle:active {
+        transform: translateX(-50%) scale(0.96);
+      }
+      #nav-toggle > img {
+        height: 3rem;
+        width: 3rem;
+        position: relative;
+        opacity: 0;
+        transition: opacity 400ms cubic-bezier(0.47, 0.8, 0.8, 0.99);
+      }
+      #nav-toggle:hover > img {
+        height: 3rem;
+        width: 3rem;
+        position: relative;
+        opacity: 1;
+      }
+      @keyframes slideIn {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, 50%);
+        }
+        50% {
+          opacity: 0;
+          transform: translate(-50%, 50%);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(-50%, 0%);
+        }
+      }
+      .CONTACTS {
+        width: 80%;
+        background-color: #f8d2ba;
+        border-radius: 5px;
+        color: #74659e;
+        padding: 15px;
+        font-size: 1.5rem;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      #contan {
+        width: calc(80% / 2);
+        height: 350px;
+        background-color: #71669a;
+        border-radius: 5px;
+        color: #74659e;
+        padding: 15px;
+        font-size: 1.5rem;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        overflow: hidden;
+        color: #d5a1ae;
+      }
+      #titleee {
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mbody">
+      <div class="header">
+        <a href="ANNOUNCEMENTS.html" id="navitem">
+          <div class="nav-items">ANNOUNCEMENTS</div>
+        </a>
+        <a href="FAQ.html" id="navitem">
+          <div class="nav-items">FAQ</div>
+        </a>
+        <a href="CONTACTS.html" id="navitem">
+          <div class="nav-items">CONTACTS</div>
+        </a>
+        <a href="POSTERS.html" id="navitem">
+          <div class="nav-items">POSTERS</div>
+        </a>
+      </div>
+      <div class="CONTACTS">
+        <div id="titleee">
+          <h1>CONTACTS</h1>
+        </div>
+        <div id="contan">
+          <h3>Spearhead</h3>
+          [HEAD]<br />
+          Name: Sofia Tay<br />
+          Email: sjtay@xsn.edu.ph<br />
+          [ASSIST]<br />
+          Name: AJ Arre<br />
+          Email: ajgarre25@xsn.edu.ph<br />
+        </div>
+        <div id="contan">
+          <h3>Communications & Promotions</h3>
+
+          [HEAD]<br />
+          Name: Gabby Garcia<br />
+          Email: bgbgarcia@xsn.edu.ph<br />
+          [ASSIST]<br />
+          Name: Lexy Tamayo<br />
+          Email: jatamayo@xsn.edu.ph<br />
+          <br />
+        </div>
+
+        <div id="contan">
+          <h3>Logistics</h3>
+          [HEAD]<br />
+          Name: Chloe Bautista<br />
+          Email: rclbautista@xsn.edu.ph<br />
+          [ASSIST]<br />
+          Name: Bernice Baoya<br />
+          Email: jbbbaoya25@xsn.edu.ph<br />
+          <br />
+        </div>
+        <div id="contan">
+          <h3>Production and Performers</h3>
+          [HEAD]<br />
+          Name: Rika Santos<br />
+          Email: rapsantos25@xsn.edu.ph<br />
+          [ASSIST]<br />
+          Name: Ruyi Ng Email: rkng@xsn.edu.ph<br />
+        </div>
+      </div>
+    </div>
+
+    <button id="nav-toggle" onclick="window.location.href='index.html'">
+      <img src="images/house.svg" />
+    </button>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phoenix</title>
+
+    <style>
+      body {
+        font-family: "Lexend", sans-serif;
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        background-color: #1c102e;
+        background-image: url("images/background.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+      .header {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .header > a {
+        margin-top: 30px;
+        margin-right: 3%;
+        font-size: 40px;
+        text-decoration: underline;
+        color: #f8d2ba;
+        font-weight: light;
+      }
+      .main-text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: 4%;
+
+        font-weight: bolder;
+        color: #f8d2ba;
+      }
+      .main-text > h1 {
+        font-size: 100px;
+        margin-bottom: 0%;
+      }
+      .main-text > h2 {
+        font-size: 40px;
+        margin-top: 0%;
+        margin-bottom: 300px;
+        animation-duration: 750ms;
+        animation-name: slidein;
+        animation-timing-function: ease-out;
+      }
+      .header:hover > #navitem > .nav-items {
+        opacity: 0.3;
+      }
+      .header:hover > #navitem > .nav-items:hover {
+        opacity: 1;
+      }
+      #navitems,
+      .nav-items {
+        transition: opacity 400ms ease-in-out;
+      }
+      @keyframes slidein {
+        0% {
+          margin-bottom: 150px;
+          opacity: 0;
+        }
+        25% {
+          opacity: 0;
+        }
+        100% {
+          margin-bottom: 300px;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="ANNOUNCEMENTS.html" id="navitem">
+        <div class="nav-items">ANNOUNCEMENTS</div>
+      </a>
+      <a href="FAQ.html" id="navitem">
+        <div class="nav-items">FAQ</div>
+      </a>
+      <a href="CONTACTS.html" id="navitem">
+        <div class="nav-items">CONTACTS</div>
+      </a>
+      <a href="POSTERS.html" id="navitem">
+        <div class="nav-items">POSTERS</div>
+      </a>
+    </div>
+    <div class="main-text">
+      <h1>Phoenix</h1>
+      <h2>Recall, Reflect, Repent, Renew</h2>
+    </div>
+  </body>
+</html>
